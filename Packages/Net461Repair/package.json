@@ -1,0 +1,23 @@
+{
+    "info": {
+        "registry": "NetRepair461Fix"
+    },
+    "run": {
+        "type": "cmd",
+        "command": "C:\\Installs\\VNC-Viewer-6.17.1113-Windows.exe"
+    },
+    "apply": [
+        {
+            "regex": "vdi-\\S+",
+            "run": "once",
+            "value": "2"
+        },
+        {
+            "hostnames": [
+                "client1",
+                "client2"
+            ],
+            "run": "always"
+        }
+    ]
+}
